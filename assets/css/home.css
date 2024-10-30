@@ -1,0 +1,727 @@
+.hero-section {
+  background-image: url("./../images/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 72px);
+  margin-top: 72px;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .hero-content {
+    h1 {
+      max-width: 375px;
+      font-size: 48px;
+      font-weight: 600;
+      font-family: "Exo";
+      line-height: 120%;
+      margin-bottom: 24px;
+    }
+    p {
+      max-width: 520px;
+      font-size: 18px;
+      color: var(--dark-gray);
+      margin-bottom: 20px;
+    }
+  }
+}
+/* =============================== Categories =============================== */
+#categories {
+  margin-top: 56px;
+  .container {
+    .categories-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+    .categories-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 31px;
+      .category {
+        width: 234px;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid #eaeaea;
+        transition: 0.4s;
+        &:hover {
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          transform: translateY(-16px);
+          h3 {
+            color: var(--primary-color);
+          }
+        }
+        img {
+          margin-bottom: 24px;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 600;
+          font-family: "Exo", sans-serif;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+/* ============================ Courses Section ============================ */
+#courses{
+  .container {
+    .courses-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+    .courses-cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 35px;
+      .course{
+        max-width: 385px;
+        border-radius: 20px;
+        border: 1px solid #eaeaea;
+        position: relative;
+        .course-tag{
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background-color: var(--black-color);
+          color: #fff;
+          border-radius: 8px;
+          padding: 8px 12px;
+          font-weight: 500;
+        }
+        .course-img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 20px 20px 0 0;
+        }
+        .course-details{
+          padding: 20px;
+          p span {
+            font-weight: 500;
+          }
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: "Exo", sans-serif;
+            margin-top: 12px;
+          }
+          .course-info {
+            padding-block: 16px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            border-bottom: 1px solid #eaeaea;
+            div {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+              color: var(--dark-gray);
+              font-weight: 500;
+            }
+          }
+          .course-footer {
+            padding-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+              color: var(--grey-color);
+            }
+            span {
+              color: #55be24;
+            }
+            a {
+              font-weight: 500;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ============================= Shared Btns ============================= */
+.shared-btn1 {
+  display: block;
+}
+.shared-btn2 {
+  display: none;
+  margin-top: 25px;
+  margin-inline: auto;
+}
+/* ============================ Explore Banner =========================== */
+#explore {
+  .container {
+    background-image: url("./../images/banner1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 54px 50px;
+    border-radius: 20px;
+    .explore-content {
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Exo";
+        margin-bottom: 12px;
+        color: var(--dark-gray);
+      }
+      h2 {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: "Exo";
+      }
+      p {
+        margin-block: 20px;
+        color: var(--dark-gray);
+        max-width: 450px;
+      }
+    }
+  }
+}
+/* ============================ Statistics =========================== */
+#statistics {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(254px, 1fr));
+    gap: 30px;
+    .card {
+      height: 160px;
+      background-color: var(--light-gray);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      span {
+        color: var(--primary-color);
+        font-size: 32px;
+        font-weight: 600;
+        font-family: "Exo";
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+/* ============================ About Section=========================== */
+#about {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    .about-img {
+      max-width: 537px;
+      img {
+        width: 100%;
+      }
+    }
+    .about-content {
+      max-width: 520px;
+      h2 {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: "Exo";
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 18px;
+        color: var(--dark-gray);
+        margin-bottom: 20px;
+      }
+      ul {
+        margin-bottom: 16px;
+        li {
+          margin-bottom: 12px;
+          position: relative;
+          padding-left: 24px;
+          &::before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            color: #55be24;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ============================ Join Our Banner =========================== */
+#join-our {
+  .container {
+    background-image: url("./../images/banner2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 65px 18px;
+    border-radius: 20px;
+    .join-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      .description {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        p {
+          font-size: 20px;
+          font-weight: 600;
+          font-family: "Exo", sans-serif;
+        }
+        div {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .join-btns {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button:nth-child(1) {
+          border: 1px solid var(--primary-color);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+/* ============================ Blog =========================== */
+#Blog{
+  .container {
+    .blog-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+    .blog-cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 35px;
+      .blog {
+        max-width: 385px;
+        border-radius: 20px;
+        border: 1px solid #eaeaea;
+        position: relative;
+        .blog-tag {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background-color: var(--black-color);
+          color: #fff;
+          border-radius: 8px;
+          padding: 8px 12px;
+          font-weight: 500;
+        }
+        .blog-img{
+          width: 100%;
+          object-fit: cover;
+          border-radius: 20px 20px 0 0;
+        }
+        .blog-details{
+          padding: 20px;
+          p span {
+            font-weight: 500;
+          }
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: "Exo", sans-serif;
+            margin-top: 12px;
+          }
+          .blog-info {
+            padding-block: 16px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            div {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+              color: var(--dark-gray);
+              font-weight: 400;
+            }
+          }
+          p{
+            font-size: 18px;
+            font-weight: 400;
+            color:var(--dark-gray);
+          }
+        }
+      }
+    }
+  }
+}
+/* ============================ contact =========================== */
+#contact{
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .contact-map{
+      max-width: 783px;
+      width: 100%;
+      position: relative;
+      .location-icon{
+        position: absolute;
+        top: 57%;
+        left:70%;
+      }
+      .map{
+        width: 100%;
+      }
+    }
+    .contact-info{
+      max-width: 410px;
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+        font-family: "Exo";
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 18px;
+        color: var(--dark-gray);
+      }
+      .contact-details{
+        display: flex;
+        gap: 24px;
+        .phone{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 56px;
+          height: 56px;
+          background-color: var(--light-gray);
+          border-radius: 8px;
+        }
+        
+      }
+    }
+  }
+}
+/* ============================ contact us =========================== */
+#contact-us{
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Exo";
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    color: var(--dark-gray);
+    padding-bottom: 30px;
+  }
+  .form-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .check{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .input-group{
+      display: flex;
+      gap: 20px;
+    }
+    .comment{
+      height: 110px;
+      padding: 16px;
+      resize: none;
+    }
+    input::placeholder{
+      color: var(--grey-color);
+      text-align: left;
+    }
+  }
+  input[type="text"],input[type="email"]{
+    padding-inline: 16px;
+    height: 48px;
+    width: 100%;
+  }
+  input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .primary-btn{
+    font-weight: 500;
+    width: 170px;
+  }
+}
+/* ============================ FAQ =========================== */
+#FAQ{
+  .container{
+    .FAQ-img{
+      max-width: 556px;
+      width: 100%;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      font-family: "Exo", sans-serif;
+    }
+    p {
+      color: var(--dark-gray);
+    }
+  }
+  #accordion{
+    width: 100%;
+    .row{
+        display: flex;
+        gap: 38px;
+    }
+    li{
+        list-style: none;
+        width: 100%;
+        margin-bottom: 30px;
+        background-color:#F5F5F5;
+        border-radius: 4px;
+        label{
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            color: black;
+            span{
+                transform: rotate(90deg);
+                font-size: 12px;
+                color:#9D9D9D;
+            }
+        }
+    }
+    .content{
+        padding: 0px 30px;
+        line-height: 27px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ;
+    }
+}
+#accordion label + input[type="radio"]{
+    display: none;
+}
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 474px;
+    padding: 20px 30px;
+}
+#accordion input[type="radio"]:checked + .content  + label{
+  color: var(--primary-color);
+}
+}
+/* ============================ login-register =========================== */
+#login-register{
+  .container{
+    display: flex;
+    gap: 30px;
+    .password-container {
+      position: relative;
+      width: 100%;
+      input {
+        width: 100%;
+      }
+        .eye-icon {
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: var(--grey-color);
+        }
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      font-family: "Exo";
+      margin-bottom: 20px;
+    }
+    .card{
+      width: 100%;
+      .primary-btn{
+        margin-bottom: 20px;
+      }
+      .register,.login{
+        padding: 30px;
+        border: 1px solid var(--light-gray);
+        border-radius: 20px;
+      }
+    }
+  }
+.input-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  input[type="email"],input[type="password"],input[type="text"]{
+    height: 48px;
+    padding-inline: 16px;
+  }
+  input[type="checkbox"]{
+    cursor: pointer;
+  }
+}
+}
+/* ============================ Responsive Design =========================== */
+@media screen and (max-width: 992px) {
+  .shared-btn1 {
+    display: none;
+  }
+  .shared-btn2 {
+    display: block;
+  }
+  .pagination{
+    margin-bottom: 70px;
+}
+  .hero-section {
+    background-image: linear-gradient(to right, #fff5be 0%, #d0f7ea 100%);
+    height: 480px;
+    .hero-content {
+      width: 100%;
+      text-align: center;
+      h1 {
+        max-width: 100%;
+        font-size: 32px;
+      }
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+  #categories {
+    .container {
+      .categories-header {
+        justify-content: center;
+        text-align: center;
+      }
+      .categories-cards {
+        gap: 25px;
+      }
+    }
+  }
+  #courses {
+    .container {
+      .courses-header {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 32px;
+      }
+    }
+  }
+  #Blog{
+    .container {
+      .blog-header {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 32px;
+      }
+    }
+  }
+  #contact-us{
+    .container{
+      .form-info{
+        .input-group{
+          flex-wrap: wrap;
+
+        }
+      }
+      button{
+        margin-bottom: 70px;
+      }
+    }
+  }
+  #FAQ{
+    #accordion{
+      .row{
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+    }
+  }
+  #explore {
+    .container {
+      max-width: 100%;
+      margin: 0;
+      border-radius: 0;
+      text-align: center;
+      background-image: linear-gradient(to right, #b5ffe7 0%, #fdc1c1 100%);
+      .explore-content {
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  #join-our {
+    .container {
+      max-width: 100%;
+      margin: 0;
+      border-radius: 0;
+      text-align: center;
+      .join-content {
+        flex-direction: column;
+        .description {
+          flex-direction: column;
+          div {
+            width: 80px;
+            height: 80px;
+            img {
+              width: 38px;
+            }
+          }
+        }
+        .join-btns {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  #about {
+    .container {
+      justify-content: center;
+      .about-content {
+        max-width: 100%;
+        order: -1;
+      }
+    }
+  }
+  #login-register{
+    .container{
+      flex-wrap: wrap;
+    }
+  }
+}
