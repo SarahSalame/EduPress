@@ -108,7 +108,7 @@ navDropDown.forEach((btn) => {
   dropDownContainer.style.transform = "scale(0)";
   dropDownContainer.innerHTML = `
     <a href='./contact.html' data-lang='contact'>contact</a>
-    <a href='./faq.html' data-lang='faq'>faq</a>
+    <a href='./FAQ.html' data-lang='faq'>faq</a>
   `;
 
   btn.addEventListener("click", (e) => {
