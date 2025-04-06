@@ -18,36 +18,60 @@
     <!-- ====================  Header ==================== -->
     <header>
       <nav>
-        <div class="container">
-          <div class="logo">
-            <img src="./assets/images/logo.svg" alt="eduPress-logo" />
-          </div>
-          <ul>
-            <li  class="active">
-                <a href="./index.html" class="active">Home</a>
-            </li>
-            <li><a href="./courses.html">Courses</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-              <li><a href="#" class="page">Page <i class="fa-solid fa-angle-down"></a></i></li>
-            <li><a href="#">Premium Theme</a></li>
-          </ul>
-          <div class="nav-actions">
-            <a href="./login.html">Login / Register</a>
-            <span>
-              <img src="./assets/images/icons/search.svg" alt="search-icon" />
-            </span>
-          </div>
-          <img
-            src="./assets/images/icons/menu-icon.svg"
-            alt="menu-icon"
-            class="menu-icon"
-          />
+        <div class="logo-container">
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <a href="">EduPress</a>
+        </div>
+        <ul>
+          <li>
+            <a class="nav-links" href="index.html" data-lang="home">Home</a>
+          </li>
+          <li>
+            <a class="nav-links" href="courses.html" data-lang="courses"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a class="nav-links" href="blog.html" data-lang="blog">Blog</a>
+          </li>
+          <li>
+            <button class="nav-drop-down-btn">
+              <div>
+                <p data-lang="page">Page</p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <a class="nav-links" href="#" data-lang="premium_theme"
+              >Premium Theme</a
+            >
+          </li> 
+        </ul>
+        <div class="nav-actions">
+          <button class="mode-switch" aria-label="Toggle Dark-Light Mode">
+            <i class="fa-solid fa-moon mode-icon"></i>
+          </button>
+          <a class="nav-links" href="./login.html" data-lang="login"
+            >Login / Register</a
+          >
+          <button class="search-btn">
+            <img src="./assets/images/icons/search.svg" alt="search-icon" />
+          </button>
+          <button class="list-btn">
+            <img  src="./assets/images/icons/menu-icon.svg" alt="list" />
+          </button>
         </div>
       </nav>
-      <div class="breakcrumb-bar section-mt">
-        <p>Homepage<span> > Login / Register</span></p>
-    </div>
     </header>
+      <!--================ ! breadcrumbs-section =========-->
+    <div class="breadcrumbs-container">
+      <p>
+        <span data-lang="home"> Homepage </span>
+        >
+        <span data-lang="login">Login / Register</span>
+      </p>
+    </div>
     <!-- ============================  Login / Register Section ============================ -->
 <section id="login-register" class="nsection-mt">
 <div class="container">
@@ -91,7 +115,7 @@
 </div>
     </div>
       </section>
-         <!-- ================== Footer ===================== -->
+        <!-- ================== Footer ===================== -->
     <footer class="section-mt">
       <div class="container">
         <div class="footer-columns">
@@ -156,5 +180,6 @@
         </p>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
